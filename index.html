@@ -325,6 +325,13 @@ body.fm-reading > section#team { display:none !important; }
 body.fm-reading > .fm-article-view[hidden] { display:none !important; }
 </style>
 <style>iframe.promo-video { display:block; width:100%; height:auto; aspect-ratio:16/9; border:0; }</style>
+<style>
+#videos .video-grid {display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:24px;align-items:start;}
+#videos .promo-video-wrap {min-width:0;width:100%;}
+#videos iframe.promo-video {display:block;width:100%;height:auto;aspect-ratio:16/9;min-height:200px;border:0;}
+#videos iframe.short-video {aspect-ratio:9/16;}
+@media(max-width:700px){#videos .video-grid{grid-template-columns:minmax(0,1fr);}#videos .short-video-wrap{max-width:360px;margin:auto;}}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -475,19 +482,19 @@ body.fm-reading > .fm-article-view[hidden] { display:none !important; }
     <div class="video-heading">
       <p class="section-kicker">WATCH FRIDGEMATE IN ACTION</p>
       <h2>Smarter fridge. <span>Simpler life.</span></h2>
-      <p>Discover the FridgeMate concept in our short promotional film, featuring food management, temperature monitoring and energy insights.</p>
+      <p>Discover the FridgeMate concept in our videos, featuring food management, temperature monitoring and energy insights.</p>
     </div>
     <div class="video-grid">
       <div class="promo-video-wrap">
         <iframe class="promo-video" src="https://www.youtube.com/embed/fjBFs3uywBw" title="FridgeMate promotional video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="promo-video-caption">FridgeMate · Promotional film · 30 seconds · <a href="https://youtu.be/fjBFs3uywBw" target="_blank" rel="noopener">Watch on YouTube</a></div>
       </div>
-      <div class="video-column">
-        <div class="video-placeholder"><div aria-hidden="true" class="video-play">▷</div><strong>More stories coming soon</strong><small>Feature walkthroughs</small></div>
-        <div class="video-placeholder"><div aria-hidden="true" class="video-play">▷</div><strong>Behind the scenes</strong><small>Future project updates</small></div>
-      </div>
-    </div>
-    <p class="video-note">FridgeMate is a concept prototype; some refrigerator readings are simulated.</p>
+      <div class="promo-video-wrap short-video-wrap">
+<iframe class="promo-video short-video" src="https://www.youtube.com/embed/PSknGI7c3QA?playsinline=1" title="FridgeMate YouTube Short" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="promo-video-caption">FridgeMate · YouTube Short · <a href="https://youtube.com/shorts/PSknGI7c3QA" target="_blank" rel="noopener">Watch on YouTube</a></div>
+</div>
+</div>
+<p class="video-note">FridgeMate is a concept prototype; some refrigerator readings are simulated.</p>
   </div>
 </section>
 <section class="newsletter section" id="inspiration"><div class="container newsletter-inner"><div><p class="section-kicker">YOUR KITCHEN, REIMAGINED</p><h2>Make room for <em>better everyday habits.</em></h2><p>Explore the FridgeMate prototype and discover a simpler way to think about your fridge.</p></div><a class="button button-primary" href="#app">See the app <span aria-hidden="true">↗</span></a></div></section>
